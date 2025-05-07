@@ -1,26 +1,26 @@
-const portfolioData = {
-  name: "Your Full Name",
-  title: "Software Developer",
+export const portfolioData = {
+  name: "Hi, I'm Cindy",
+  title: "Aspiring Web Developer",
   about:
-    "I build modern, performant web applications using JavaScript, React, and Node.js.",
+    "Motivated IT Professional with a Software Development Diploma and a Master’s degree in Information Technology. Recently graduated with hands-on experience in programming, web development, and academic projects. Skilled in developing user-friendly applications and contributing to collaborative team environments. Known for a strong work ethic, adaptability, and a passion for learning new technologies. Eager to apply my skills and knowledge to an entry-level role in software development and contribute to meaningful projects.",
   projects: [
     {
-      title: "Portfolio Website",
-      description: "Personal site to showcase my projects and experience.",
-      link: "#",
+      title: "Weather App",
+      description: "A weather app built using React and OpenWeather API.",
+      link: "https://github.com/yourusername/weather-app",
+      image: "https://source.unsplash.com/400x300/?weather",
     },
     {
-      title: "Task Manager App",
-      description: "A full-stack app for managing daily tasks.",
-      link: "#",
+      title: "Portfolio Website",
+      description:
+        "My personal portfolio built using React and deployed on Vercel.",
+      link: "https://yourportfolio.vercel.app",
+      image: "https://source.unsplash.com/400x300/?laptop",
     },
   ],
-  skills: ["React", "JavaScript", "HTML", "CSS", "Node.js", "Git"],
+  skills: ["HTML", "CSS", "JavaScript", "React"],
   contact: {
-    email: "your.email@example.com",
-    github: "https://github.com/yourusername",
-    linkedin: "https://linkedin.com/in/yourprofile",
+    email: "youremail@example.com",
+    phone: "123-456-7890",
   },
 };
-
-export default portfolioData;

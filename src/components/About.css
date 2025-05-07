@@ -1,0 +1,36 @@
+#about {
+    background-color: #0f0f1b;
+    /* black-purple background to match projects */
+    color: #ffffff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about h2 {
+    color: #bb86fc;
+    /* light purple title */
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-content {
+    background-color: #1e1e2f;
+    border: 1px solid #2e2e3f;
+    border-radius: 16px;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-content:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 16px rgba(187, 134, 252, 0.4);
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cccccc;
+}
