@@ -15,8 +15,6 @@ import {
 } from "react-icons/fa";
 import {
   SiJquery,
-  SiNextdotjs,
-  SiTypescript,
   SiExpress,
   SiPostman,
   SiMongodb,

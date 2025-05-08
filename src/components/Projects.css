@@ -8,9 +8,9 @@
 
 h2 {
     color: #bb86fc;
-    /* light purple title */
     font-size: 2.5rem;
     margin-bottom: 2rem;
+    text-align: left;
 }
 
 .projects-grid {
