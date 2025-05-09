@@ -1,5 +1,5 @@
 #contact {
-    background-color: #121212;
+    background-color: #0f0f1b;
     color: #ffffff;
     padding: 4rem 2rem;
     text-align: center;
@@ -78,7 +78,9 @@
 
 .social-icons a:hover {
     color: #9c4df5;
-}#contact input:focus,
+}
+
+#contact input:focus,
 #contact textarea:focus {
     outline: none;
     border-color: #bb86fc;

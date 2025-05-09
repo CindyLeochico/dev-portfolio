@@ -1,7 +1,8 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #0d0d0d;
+  background-color: #0f0f1b;
+  ;
   color: #e0e0e0;
 }
 
@@ -15,7 +16,7 @@ header {
 h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: #bb86fc;
+  color: white
 }
 
 p {
@@ -39,13 +40,13 @@ a:hover {
   color: #a370f7;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background-color: #111;
 }
 
 section:nth-child(odd) {
   background-color: #0d0d0d;
-}
+} */
 
 html {
   scroll-behavior: smooth;
