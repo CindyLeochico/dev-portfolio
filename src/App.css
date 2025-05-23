@@ -1,27 +1,49 @@
+:root {
+  /* core palette */
+  --bg-primary: #ffffff;
+  /* pure white */
+  --bg-secondary: #b0b5ae;
+  /* soft gray (≈ your image) */
+  --text-main: #333333;
+  /* dark for good contrast */
+  --text-muted: #666666;
+  /* for secondary copy */
+  --accent: #b0b5ae;
+  /* same gray as accent */
+  --accent-dark: #8d8f8b;
+  /* slightly deeper gray for hover states */
+  --header-start: #ffffff;
+  /* white */
+  --header-end: #e6e6e6;
+  /* very light gray */
+}
+
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: #0f0f1b;
-  ;
-  color: #e0e0e0;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
 }
 
 header {
   text-align: center;
   padding: 3rem 1rem;
-  background: linear-gradient(135deg, #2a0055, #0d0d0d);
-  color: white;
+  background: linear-gradient(135deg,
+      var(--header-start),
+      var(--header-end));
+  color: var(--text-main);
 }
 
 h1 {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
-  color: white
+  margin-bottom: .5rem;
+  color: var(--text-main);
 }
 
 p {
   font-size: 1.25rem;
-  color: #d1c4e9;
+  color: var(--text-muted);
 }
 
 section {
@@ -30,76 +52,66 @@ section {
   margin: auto;
 }
 
+/* alternate “black” / “dark-purple” stripes */
+section:nth-child(odd) {
+  background-color: var(--bg-primary);
+}
+
+section:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
 a {
-  color: #bb86fc;
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
-  color: #a370f7;
+  color: var(--accent-dark);
 }
-
-/* section:nth-child(even) {
-  background-color: #111;
-}
-
-section:nth-child(odd) {
-  background-color: #0d0d0d;
-} */
 
 html {
   scroll-behavior: smooth;
 }
 
-/* Style for the Back to Top button */
+/* “Back to Top” button */
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  padding: 10px 20px;
-  background-color: #bb86fc;
-  color: white;
+  padding: 10px;
+  background-color: var(--accent);
+  color: var(--bg-primary);
   border: none;
   border-radius: 50%;
   font-size: 20px;
   cursor: pointer;
   display: none;
-  /* Initially hidden */
-  transition: background-color 0.3s ease;
+  transition: background-color .3s ease;
 }
 
-.back-to-top:hover {
-  background-color: #9c4df5;
-}
-
-.back-to-top.show {
-  display: block;
-  /* Make button visible when user scrolls down */
-}
-
-/* Style for the Back to Top button */
-.back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  background-color: #bb86fc;
-  color: white;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-  /* Initially hidden */
-  transition: background-color 0.3s ease;
-}
-
-.back-to-top:hover {
-  background-color: #9c4df5;
+.back-to-top.show:hover {
+  background-color: var(--accent-dark);
 }
 
 .back-to-top.show {
   display: block;
-  /* Make button visible when user scrolls down */
+}
+/* Remove all boxed/card styling */
+.about-content,
+.project-card,
+.skill-item,
+.work-card,
+.confirmation-message {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* If you also want your sections full-bleed (no alternating stripes) */
+section:nth-child(odd),
+section:nth-child(even) {
+  background: transparent !important;
 }

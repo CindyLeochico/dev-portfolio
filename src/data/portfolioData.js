@@ -1,8 +1,10 @@
 export const portfolioData = {
   name: "Hi, I'm Cindy",
-  title: "Aspiring Web Developer",
+  title:
+    " I create sites that help you get more applications for your business",
   about:
-    "Motivated IT Professional with a Software Development Diploma and a Master’s degree in Information Technology. Recently graduated with hands-on experience in programming, web development, and academic projects. Skilled in developing user-friendly applications and contributing to collaborative team environments. Known for a strong work ethic, adaptability, and a passion for learning new technologies. Eager to apply my skills and knowledge to an entry-level role in software development and contribute to meaningful projects.",
+  
+"I'm a full-stack developer who builds high-performance, scalable web applications using the MERN stack, TypeScript, and Next.js. On the frontend, I design and implement responsive, user-friendly interfaces that drive engagement. On the backend, I architect robust Node.js/Express APIs,  MongoDB databases, and secure access with JWT. I’ve deployed and maintained apps in cloud environments containerized with Docker, automated through CI/CD pipelines, and hosted on AWS ensuring reliability and smooth performance. I write clean, maintainable code that balances business objectives with user needs. Let’s turn your next idea into a thoughtfully engineered digital experience.",
   projects: [
     {
       title: "Weather App",

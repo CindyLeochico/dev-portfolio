@@ -1,14 +1,15 @@
 #works {
-    background-color: #0f0f1b;
-    /* black-purple background to match projects */
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    /* soft gray */
+    color: var(--text-main);
+    /* dark charcoal */
     padding: 4rem 2rem;
     text-align: justify;
-
 }
 
 .work-experience h2 {
-    color: #bb86fc;
+    color: var(--accent);
+    /* gray accent */
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: left;
@@ -23,25 +24,31 @@
 }
 
 .work-card {
-    background-color: #1e1e2f;
-    border: 1px solid #2e2e3f;
+    background-color: var(--bg-primary);
+    /* white card */
+    border: 1px solid var(--accent-dark);
+    /* deeper gray border */
     border-radius: 16px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.2);
+    box-shadow: 0 4px 10px rgba(176, 181, 174, 0.2);
+    /* light gray shadow */
 }
 
 .work-card h3 {
-    color: #e0e0ff;
+    color: var(--text-main);
+    /* dark charcoal */
     margin-bottom: 0.5rem;
 }
 
 .company {
-    color: #bbbbbb;
+    color: var(--text-muted);
+    /* muted text */
     font-style: italic;
 }
 
 .period {
-    color: #999;
+    color: var(--accent-dark);
+    /* deeper gray */
     margin-bottom: 1rem;
 }
 
@@ -52,5 +59,6 @@
 
 .work-card li {
     margin-bottom: 0.5rem;
-    color: #cccccc;
+    color: var(--text-muted);
+    /* muted text */
 }

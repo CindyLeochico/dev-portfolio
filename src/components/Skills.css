@@ -1,14 +1,15 @@
 #skills {
-    background-color: #0f0f1b;
-    /* black-purple background */
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    /* soft gray */
+    color: var(--text-main);
+    /* dark charcoal */
     padding: 4rem 2rem;
     text-align: center;
 }
 
-h2 {
-    color: #bb86fc;
-    /* light purple title */
+#skills h2 {
+    color: var(--accent);
+    /* gray accent */
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -22,12 +23,15 @@ h2 {
 }
 
 .skill-item {
-    background-color: #1e1e2f;
-    border: 1px solid #2e2e3f;
+    background-color: var(--bg-primary);
+    /* white card */
+    border: 1px solid var(--accent-dark);
+    /* darker gray border */
     border-radius: 12px;
     padding: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 2px 6px rgba(187, 134, 252, 0.15);
+    box-shadow: 0 2px 6px rgba(176, 181, 174, 0.15);
+    /* light gray shadow */
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -37,21 +41,24 @@ h2 {
 
 .skill-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 12px rgba(187, 134, 252, 0.3);
+    box-shadow: 0 4px 12px rgba(176, 181, 174, 0.3);
+    /* stronger on hover */
 }
 
 .skill-item .icon {
     font-size: 1.8rem;
-    color: #bb86fc;
+    color: var(--accent);
+    /* gray accent */
 }
 
 .skill-item .label {
     font-size: 0.7rem;
-    color: #e0e0ff;
+    color: var(--text-muted);
+    /* muted text */
     margin-top: 0.3rem;
 }
 
+/* Descriptions removed */
 .skill-item p {
     display: none;
-    /* Not needed if you’ve removed descriptions */
 }

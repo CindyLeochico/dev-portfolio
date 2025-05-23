@@ -3,8 +3,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 10rem;
-    background-color: #1e1e2f;
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    /* soft gray */
+    color: var(--text-main);
+    /* dark charcoal */
     position: relative;
 }
 
@@ -21,7 +23,7 @@
 
 .navbar h3 {
     font-size: 1rem;
-    color: white;
+    color: var(--text-main);
     margin: 0;
 }
 
@@ -34,14 +36,15 @@
 }
 
 .navbar-links li a {
-    color: #ffffff;
+    color: var(--text-main);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-    color: #bb86fc;
+    color: var(--accent-dark);
+    /* darker gray on hover */
 }
 
 /* Hamburger styles */
@@ -55,7 +58,8 @@
 .hamburger span {
     width: 25px;
     height: 3px;
-    background-color: #bb86fc;
+    background-color: var(--accent);
+    /* gray accent */
     transition: 0.3s;
 }
 
@@ -69,7 +73,7 @@
         position: absolute;
         top: 100%;
         right: 0;
-        background-color: #1e1e2f;
+        background-color: var(--bg-secondary);
         flex-direction: column;
         width: 100%;
         display: none;

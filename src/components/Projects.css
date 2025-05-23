@@ -1,13 +1,15 @@
 #projects {
-    background-color: #0f0f1b;
-    /* black-purple background */
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    /* soft gray */
+    color: var(--text-main);
+    /* dark charcoal */
     padding: 4rem 2rem;
     text-align: center;
 }
 
-h2 {
-    color: #bb86fc;
+#projects h2 {
+    color: var(--accent);
+    /* gray accent */
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: left;
@@ -20,17 +22,21 @@ h2 {
 }
 
 .project-card {
-    background-color: #1e1e2f;
-    border: 1px solid #2e2e3f;
+    background-color: var(--bg-primary);
+    /* white card background */
+    border: 1px solid var(--accent-dark);
+    /* deeper gray border */
     border-radius: 16px;
     padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.2);
+    box-shadow: 0 4px 10px rgba(176, 181, 174, 0.2);
+    /* light gray shadow */
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 6px 16px rgba(187, 134, 252, 0.4);
+    box-shadow: 0 6px 16px rgba(176, 181, 174, 0.4);
+    /* stronger on hover */
 }
 
 .project-card img {
@@ -40,22 +46,26 @@ h2 {
 }
 
 .project-card h3 {
-    color: #e0e0ff;
+    color: var(--text-main);
+    /* dark charcoal heading */
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #cccccc;
+    color: var(--text-muted);
+    /* muted text */
     margin-bottom: 1rem;
 }
 
 .project-card a {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #bb86fc;
-    color: #000;
+    background-color: var(--accent);
+    /* gray accent button */
+    color: var(--bg-primary);
+    /* white text */
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
@@ -63,5 +73,6 @@ h2 {
 }
 
 .project-card a:hover {
-    background-color: #a675e4;
+    background-color: var(--accent-dark);
+    /* darker accent on hover */
 }

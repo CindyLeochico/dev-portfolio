@@ -11,7 +11,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-left">
         <img src={logo} alt="Logo" className="logo" />
-        <h3>Cindy | Dev Portfolio</h3>
+        <h3>Cindy Leochico | Dev Portfolio</h3>
       </div>
 
       <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
@@ -21,6 +21,11 @@ const Navbar = () => {
       </div>
 
       <ul className={`navbar-links ${isOpen ? "show" : ""}`}>
+        <li>
+          <a href="#home" onClick={toggleMenu}>
+            Home
+          </a>
+        </li>
         <li>
           <a href="#about" onClick={toggleMenu}>
             About
@@ -36,11 +41,11 @@ const Navbar = () => {
             Work
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#skills" onClick={toggleMenu}>
             Skills
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact" onClick={toggleMenu}>
             Contact

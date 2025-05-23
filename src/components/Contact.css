@@ -1,12 +1,15 @@
 #contact {
-    background-color: #0f0f1b;
-    color: #ffffff;
+    background-color: var(--bg-secondary);
+    /* soft gray */
+    color: var(--text-main);
+    /* dark charcoal */
     padding: 4rem 2rem;
     text-align: center;
 }
 
 #contact h2 {
-    color: #bb86fc;
+    color: var(--accent);
+    /* gray accent */
     font-size: 2.5rem;
     margin-bottom: 2rem;
 }
@@ -19,7 +22,8 @@
 }
 
 #contact label {
-    color: #cccccc;
+    color: var(--text-muted);
+    /* muted text */
     margin-bottom: 0.5rem;
     text-align: left;
 }
@@ -28,16 +32,21 @@
 #contact textarea {
     padding: 1rem;
     margin-bottom: 1rem;
-    border: 1px solid #444;
+    border: 1px solid var(--accent-dark);
+    /* darker gray */
     border-radius: 5px;
-    background-color: #1f1b24;
-    color: #ffffff;
+    background-color: var(--bg-primary);
+    /* white */
+    color: var(--text-main);
+    /* dark text */
     font-size: 1rem;
 }
 
 #contact input[type="submit"] {
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: var(--accent-dark);
+    /* gray accent */
+    color: var(--bg-primary);
+    /* white text */
     font-weight: bold;
     cursor: pointer;
     border: none;
@@ -45,25 +54,32 @@
 }
 
 #contact input[type="submit"]:hover {
-    background-color: #9c4df5;
+    background-color: var(--accent-dark);
+    /* darker accent */
 }
 
 #contact input:focus,
 #contact textarea:focus {
     outline: none;
-    border-color: #bb86fc;
+    border-color: var(--accent);
+    box-shadow: 0 0 8px rgba(176, 181, 174, 0.5);
+    /* muted gray glow */
 }
 
 .confirmation-message {
-    background-color: #1f1b24;
-    color: #bb86fc;
+    background-color: var(--bg-primary);
+    /* white */
+    color: var(--accent);
+    /* gray accent */
     padding: 2rem;
     border-radius: 8px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(187, 134, 252, 0.15);
+    box-shadow: 0 4px 12px rgba(176, 181, 174, 0.15);
+    /* light gray shadow */
 }
 
 .social-icons {
+    color: var(--accent-dark);
     margin-top: 2rem;
     display: flex;
     justify-content: center;
@@ -71,18 +87,11 @@
 }
 
 .social-icons a {
-    color: #bb86fc;
+    color: var(--accent-dark);
     font-size: 2rem;
     transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #9c4df5;
-}
-
-#contact input:focus,
-#contact textarea:focus {
-    outline: none;
-    border-color: #bb86fc;
-    box-shadow: 0 0 8px rgba(187, 134, 252, 0.5);
+    color: var(--accent-dark);
 }

@@ -1,40 +1,115 @@
-#about {
-    background-color: #0f0f1b;
-    color: #ffffff;
-    padding: 4rem 2rem;
-    text-align: justify;
-
-}
-
-#about h2 {
-    color: #bb86fc;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-
-}
-
-.about-content {
-    background-color: #1e1e2f;
-    border: 1px solid #2e2e3f;
-    border-radius: 16px;
-    padding: 2rem;
-    max-width: 800px;
+#about-section {
+    max-width: 1200px;
     margin: 0 auto;
-    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
+    padding: 4rem 2rem;
+    font-family: 'Poppins', sans-serif;
 }
 
-.about-content:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 6px 16px rgba(187, 134, 252, 0.4);
+/* Header with divider and badge */
+.about-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
-.about-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #cccccc;
+.about-header .divider {
+    flex: 1;
+    height: 1px;
+    background: #ccc;
+}
 
+.about-header .label {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+    color: #555;
+}
 
+.about-header .badge {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+    padding: 0.2rem 0.6rem;
+    border: 1px solid #333;
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Two-column content */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+/* Text column */
+.about-content .text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-content .text p {
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 2rem;
+}
+
+.about-content .text .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid #333;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Photo column */
+.about-content .photo {
+    text-align: right;
+}
+
+.about-content .photo img {
+    max-width: 100%;
+    border-radius: 2rem 10rem 2rem 10rem;
+    display: inline-block;
+
+}
+#about-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#about-header h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Sub-info row */
+#about-header .sub-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+/* Optional center styling */
+#about-header .year {
+    text-align: center;
+    flex: 1;
+    /* ensures the year stays centered */
+}
+
+/* Link style */
+#about-header .scroll-down {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
 }
